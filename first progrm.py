@@ -1,1 +1,1 @@
-print("hello swe 2025")
+print("hello")
