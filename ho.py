@@ -1,1 +1,2 @@
-prinyt("hello people")
+print("hello madam")
+print("kuzuzanpola")
