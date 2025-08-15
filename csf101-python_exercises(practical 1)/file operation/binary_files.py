@@ -5,3 +5,9 @@ def create_binary_file(filename):
 
         create_binary_file("binary_sample.bin")
         print("binary file created successfully.")
+
+        def read_binary_file(filename0):
+            with open(filename, "rb") as file:
+                content = file.read()
+                print("binary content:", content)
+                read_binary_file("binary_sample.bin")
