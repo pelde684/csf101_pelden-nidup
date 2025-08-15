@@ -11,3 +11,12 @@ def create_binary_file(filename):
                 content = file.read()
                 print("binary content:", content)
                 read_binary_file("binary_sample.bin")
+
+
+                def append_to_binary_file(filename, data):
+                    with open(filename, "ab") as file:
+                        file.write(data)
+
+                        append_to_binary_file("binary_sample.bin", bytes([6, 7, 8, 9]))
+                        print("bytes appended to binary file.")
+                        read_binary_file("binary_sample.bin")
